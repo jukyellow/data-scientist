@@ -6,7 +6,7 @@
 
 
 ### 2. 기초 도구 사용법
-- Pandas DataFrame : https://github.com/jukyellow/data-scientist/tree/main/00_Pandas_DataFreame_Handling  
+- Pandas DataFrame : https://github.com/jukyellow/data-scientist/blob/main/00_%EC%8B%A4%EB%AC%B4%EC%8A%A4%ED%82%AC/Pandas_DataFreame_Handling.md  
 
 
 ### 3. K-MOOC 강좌

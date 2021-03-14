@@ -63,4 +63,7 @@ df.groupby(by=['상품번호'], as_index=False).sum()
 df.groupby(by=['상품번호'], as_index=False).mean()
 -멀티항목
 df.groupby(by=['고객번호', '상품번호'], as_index=False).sum()
+-그룹항목별 사이즈표시의 정렬방법
+tr_group = train_csv.sort_values(by="Label", ascending=False).groupby(by=['Label'])
+print(tr_group.size().sort_values(ascending=False)) # size()에서 sort_values적용!
 ```

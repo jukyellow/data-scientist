@@ -67,3 +67,9 @@ df.groupby(by=['고객번호', '상품번호'], as_index=False).sum()
 tr_group = train_csv.sort_values(by="Label", ascending=False).groupby(by=['Label'])
 print(tr_group.size().sort_values(ascending=False)) # size()에서 sort_values적용!
 ```
+
+### 9) 특정 조건의 DataFrame 복제
+```
+for idx in range(10):
+    df_new = train_x_df.loc[train_x_df.loc[:, "coin_index"]==idx]
+```

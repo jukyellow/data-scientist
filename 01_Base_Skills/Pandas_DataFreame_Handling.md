@@ -73,3 +73,13 @@ print(tr_group.size().sort_values(ascending=False)) # size()에서 sort_values�
 for idx in range(10):
     df_new = train_x_df.loc[train_x_df.loc[:, "coin_index"]==idx]
 ```
+
+### 10) 특정 시간대만 추출
+```
+# 매일 새벽1시만 추출
+df_sam = df[pd.DatetimeIndex(df.index).hour==1]
+# df_sam
+2021-09-08 01:00:00	4189000	4290000	4140000	4259000	10802.685233	4.535723e+10
+2021-09-09 01:00:00	4075000	4160000	4050000	4158000	3556.261361	1.464806e+10
+
+```
